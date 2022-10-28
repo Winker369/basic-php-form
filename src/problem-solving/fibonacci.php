@@ -9,4 +9,5 @@
 
         return implode(', ', $fib);
     }
+
     var_dump(fibonacci(15));

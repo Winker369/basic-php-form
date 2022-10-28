@@ -138,11 +138,11 @@
                             this.readyState == 4
                             && (this.status == 200 || this.status == 500)
                         ) {
+                            document.getElementById('profileForm').reset();
                             alert(response['body']);
                         }
 
                         if (this.readyState == 4 && this.status == 400) {
-                            console.log(JSON.parse(this.response));
                             alert(response['body'].join('\n'));
                         }
                     };
