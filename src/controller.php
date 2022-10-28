@@ -40,7 +40,8 @@
         print_r(json_encode($response));
     }
 
-    function saveProfile($requestData) {
+    function saveProfile($requestData)
+    {
         $status = false;
         $dbSettings = $GLOBALS['db_settings'];
         $con = new mysqli(
@@ -85,7 +86,8 @@
         return $status;
     }
 
-    function validateForm($requestData) {
+    function validateForm($requestData)
+    {
         $errorMessages = [];
 
         foreach ($requestData as $field => $value) {
@@ -99,7 +101,8 @@
         return $errorMessages;
     }
 
-    function validateField($field, $value) {
+    function validateField($field, $value)
+    {
         $errorMessage = '';
         $pattern = '';
 
