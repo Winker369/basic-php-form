@@ -41,7 +41,9 @@
         }
     }
 
-    $algorithm = new Algorithm([6, 11, 4, 21, 12, 18]);
+    // Take input
+    $numbers = explode(' ', readline('Enter multiple space separated values: '));
+    $algorithm = new Algorithm($numbers);
     echo 'Median: ';
     var_dump($algorithm->getMedian());
     echo 'Highest: ';

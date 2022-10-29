@@ -10,4 +10,6 @@
         return implode(', ', $fib);
     }
 
-    var_dump(fibonacci(15));
+    // Take input
+    $number = (int)readline('Enter an integer: ');
+    var_dump(fibonacci($number));

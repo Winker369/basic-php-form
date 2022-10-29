@@ -13,13 +13,11 @@ services:
     image: mysql:latest
     container_name: php_db
     command: --default-authentication-plugin=mysql_native_password
-    restart: always
     environment:
       MYSQL_ROOT_PASSWORD: root
 
   phpmyadmin:
     image: phpmyadmin:latest
-    restart: always
     ports:
       - 9001:80
     environment:
